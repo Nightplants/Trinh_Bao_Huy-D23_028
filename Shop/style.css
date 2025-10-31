@@ -1,0 +1,193 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+}
+
+body {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  color: #4a3c2a;
+  overflow-x: hidden;
+}
+
+header {
+  background: wheat;
+  color: #4a3c2a;
+  width: 97%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  border-bottom: 4px solid rgb(190, 172, 139);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.brand-logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #8b4513;
+  transition: 0.3s ease-in-out;
+}
+.brand-logo:hover {
+  color: rgb(190, 172, 139);
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: #4a3c2a;
+  font-weight: 500;
+  transition: color 0.2s;
+  font-size: x-large;
+}
+nav a:hover {
+  color: rgb(190, 172, 139);
+}
+
+.user-label {
+  font-size: x-large;
+}
+.user-label strong {
+  color: #8b4513;
+}
+
+.shop-container {
+  margin-top: 120px;
+  text-align: center;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+.shop-title {
+  color: #5c3d1b;
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.shop-description {
+  font-size: larger;
+  margin-bottom: 30px;
+  color: #5c3d1b;
+}
+
+.section-title {
+  color: #5c3d1b;
+  margin-top: 40px;
+  font-size: 28px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background-color: #fff8e1;
+  border: 3px solid rgb(190, 172, 139);
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.product-card h2 {
+  color: #5c3d1b;
+  margin-bottom: 5px;
+  font-size: 22px;
+}
+
+.product-description {
+  font-size: 16px;
+  text-align: justify;
+  color: #4a3c2a;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-weight: bold;
+  color: #8b4513;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.buy-btn {
+  background-color: rgb(255, 239, 206);
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 2px solid rgb(190, 172, 139);
+  transition: 0.12s ease-in-out;
+  cursor: pointer;
+}
+.buy-btn:hover {
+  background-color: rgb(231, 215, 182);
+}
+
+.delete-btn {
+  background-color: rgb(255, 220, 220);
+  border: 2px solid rgb(190, 100, 100);
+  padding: 6px 12px;
+  border-radius: 8px;
+  margin-left: 5px;
+}
+.delete-btn:hover {
+  background-color: rgb(240, 180, 180);
+}
+
+.add-product-section {
+  margin: 30px 0;
+  padding: 15px;
+  background-color: #fff8e1;
+  border: 3px solid rgb(190, 172, 139);
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.add-product-section input {
+  padding: 8px;
+  border-radius: 8px;
+  border: 2px solid rgb(190, 172, 139);
+  background-color: rgb(255, 239, 206);
+  width: 200px;
+}
+
+.edit-btn {
+  background-color: rgb(255, 239, 206);
+  border: 2px solid rgb(190, 172, 139);
+  padding: 6px 12px;
+  border-radius: 8px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.edit-btn:hover {
+  background-color: rgb(231, 215, 182);
+}

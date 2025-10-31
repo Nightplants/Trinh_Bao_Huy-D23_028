@@ -1,0 +1,141 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+}
+
+body {
+  background-color: antiquewhite;
+  color: #4a3c2a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  background: wheat;
+  color: #4a3c2a;
+  width: 97%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  border-bottom: 4px solid rgb(190, 172, 139);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.brand-logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #8b4513;
+  transition: 0.3s ease-in-out;
+}
+.brand-logo:hover {
+  color: rgb(190, 172, 139);
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: #4a3c2a;
+  font-weight: 500;
+  transition: color 0.2s;
+  font-size: x-large;
+}
+nav a:hover {
+  color: rgb(190, 172, 139);
+}
+
+.user-label {
+  font-size: x-large;
+}
+.user-label strong {
+  color: #8b4513;
+}
+
+.cart-container {
+  margin-top: 120px;
+  width: 90%;
+  max-width: 800px;
+  background-color: #fff8e1;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container h1 {
+  text-align: center;
+  color: #5c3d1b;
+  margin-bottom: 25px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgb(190, 172, 139);
+  padding: 12px 0;
+}
+
+.cart-item h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.cart-item p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.cart-item button {
+  background-color: rgb(255, 239, 206);
+  border: 2px solid rgb(190, 172, 139);
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.cart-item button:hover {
+  background-color: rgb(231, 215, 182);
+}
+
+.cart-summary {
+  margin-top: 25px;
+  text-align: right;
+}
+
+.total {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.cart-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.clear-cart,
+.checkout {
+  background-color: rgb(255, 239, 206);
+  border: 2px solid rgb(190, 172, 139);
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.clear-cart:hover,
+.checkout:hover {
+  background-color: rgb(231, 215, 182);
+}
